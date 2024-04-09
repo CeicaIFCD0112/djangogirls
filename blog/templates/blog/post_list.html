@@ -9,10 +9,51 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <style>
+            /* Estilos para los títulos */
+            h1 {
+                font-size: 24px;
+                font-weight: bold;
+                color: #333;
+            }
+    
+            /* Estilos para el botón */
+            .btn {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: #007bff;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 5px;
+                font-size: 18px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+    
+            .btn:hover {
+                background-color: #0056b3;
+            }
+    
+            /* Estilos para la imagen */
+            .img-container {
+                display: inline-block;
+                margin-left: 20px;
+            }
+    
+            .img-container img {
+                width: 100px; /* Ajusta el tamaño según sea necesario */
+                height: auto;
+            }
+        </style>
     </head>
     <body>
         <div>
-            <h1>Listado de Post </h1>
+            <h1>Bienvenidos al Listado de Post de Python</h1>
+        </div>
+        <div>
+            <!-- Imagen al lado del botón -->
+            <div class="img-container">
+                <img src="C:\pythonProyects\djangogirls\blog\static\imagenes\logo-ceica-rectangular-1.png" alt="Imagen de ejemplo">
         </div>
         <div>
             {% for post in posts %}
