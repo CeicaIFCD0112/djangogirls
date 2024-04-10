@@ -11,6 +11,11 @@ h2 a {
 
 }
 
+p1 {
+    color: chocolate;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 post.title {
     color:bisque;
     font-family: Verdana, Geneva, Tahoma, sans-serif;

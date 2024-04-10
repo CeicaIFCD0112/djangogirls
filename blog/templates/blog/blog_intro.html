@@ -1,64 +1,44 @@
+{% load static %}
 <!DOCTYPE HTML>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Plantilla de Django · Blog</title>
+    <title>Python For Dummies · Blog</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="HandheldFriendly" content="true">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
+    <link href="static/css/blog.css" rel="stylesheet" type="text/css" />
     <style>
-        /* Estilos para los títulos */
-        h1 {
-            font-size: 24px;
-            font-weight: bold;
-            color: #333;
+        p {
+            font-size: 16px;
+            text-align: justify;
+            color: black;
         }
-
-        /* Estilos para el botón */
-        .btn {
+        .button {
             display: inline-block;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            text-align: center;
+            font-size: 16px;
             padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 18px;
             cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #0056b3;
-        }
-
-        /* Estilos para la imagen */
-        .img-container {
-            display: inline-block;
-            margin-left: 20px;
-        }
-
-        .img-container img {
-            width: 100px; /* Ajusta el tamaño según sea necesario */
-            height: auto;
+            border-radius: 5px;
+            text-decoration: none;
         }
     </style>
 </head>
-
 <body>
-<div>
-    <h1>Bienvenidos al Listado de Post de Python</h1>
-</div>
-<div>
-    <!-- Botón para redirigir a las entradas del blog -->
-    <a href="/post_list.html" class="btn">Ver entradas del blog</a>
-    <!-- Imagen al lado del botón -->
-    <div class="img-container">
-        <img src="C:\pythonProyects\djangogirls\blog\static\imagenes\logo-ceica-rectangular-1.png" alt="Imagen de ejemplo">
+    <div>
+        <img src="{% static 'myapp/logo-ceica.jpg' %}" alt="Imagen de ejemplo">
+        <h1><span style="font-size: 20px; font-family: 'Open Sans', sans-serif; color: chocolate; font-weight: bold;">Python For Dummies By Ricardo Balseiro</span></h1>
     </div>
-</div>
+    <div>
+        <p>Python For Dummies, esta orientado a los primeros pasos que debemos dar para lograr nuestro primer Proyecto !!!!</p>
+    </div>
+    <a href="{% url 'post_list' %}" class="button">Ver publicaciones del blog</a>
 </body>
 </html>
