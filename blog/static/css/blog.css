@@ -1,4 +1,9 @@
-h1 a, h2 a {
+h1 a {
+    color: #c25100ce;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 a {
     color: #c25100ce;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
