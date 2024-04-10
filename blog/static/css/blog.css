@@ -1,3 +1,19 @@
 h1 a, h2 a {
-    color: #C25100;
+    color: #c25100ce;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+post.title {
+    color:bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+post.published_date {
+    color: chocolate;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+post.text {
+    color:bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
