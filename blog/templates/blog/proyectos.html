@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Python For Dummies · Blog</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="static/css/proyectos.css" rel="stylesheet" type="text/css" />
+    <style>
+        .button {
+            display: inline-block;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <h1> P R O Y E C T O S.......!!!!! </h1>
+        <thead>
+            <tr>
+                <th>Lenguajes 1</th>
+                <th>Lenguajes 2</th>
+                <th>Lenguajes 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="{% static 'myapp/python-logo.jpg' %}" alt="Imagen de ejemplo"></td>
+                <td><img src="{% static 'myapp/java-logo.jpg' %}" alt="Imagen de ejemplo"></td>
+                <td><img src="{% static 'myapp/spring-logo.jpg' %}" alt="Imagen de ejemplo"></td>
+            </tr>
+            <tr>
+                <td><img src="{% static 'myapp/timeleaf-logo.jpg' %}" alt="Imagen de ejemplo"></td>
+                <td><img src="{% static 'myapp/JavaScript-logo.jpg' %}" alt="Imagen de ejemplo"></td>
+                <td><img src="{% static 'myapp/html-logo.jpg' %}" alt="Imagen de ejemplo"></td>
+            </tr>
+            <tr>
+                <td><img src="{% static 'myapp/visual-studio-code-logo.jpg' %}" alt="Imagen de ejemplo"></td>
+                <td><img src="{% static 'myapp/intelliJ-logo.jpg' %}" alt="Imagen de ejemplo"></td>
+                <td><img src="{% static 'myapp/github-logo.jpg' %}" alt="Imagen de ejemplo"></td>
+            </tr>
+            <!-- Puedes agregar más filas según necesites -->
+        </tbody>
+    </table>
+    <a href="{% url 'home' %}" class="button">Ir al Home o Raiz del Blog</a>
+</body>
+</html>

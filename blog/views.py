@@ -8,3 +8,6 @@ def post_list(request):
 
 def home(request):
     return render(request,'blog/blog_intro.html',{})
+
+def proyectos(request):
+    return render(request,'blog/proyectos.html',{})

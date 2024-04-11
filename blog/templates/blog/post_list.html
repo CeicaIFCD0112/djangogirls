@@ -11,6 +11,21 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <link href="static/css/blog.css" rel="stylesheet" type="text/css" />
+        <style>
+            .button {
+                display: inline-block;
+                background-color: #4CAF50;
+                border: none;
+                color: white;
+                text-align: center;
+                font-size: 16px;
+                padding: 10px 20px;
+                cursor: pointer;
+                border-radius: 5px;
+                text-decoration: none;
+            }
+        </style>
+
     </head>
     <body>
         <div>
@@ -28,6 +43,6 @@
             </div>
         {% endfor %}
         </div>
-
+        <a href="{% url 'proyectos' %}" class="button">Ver proyectos asociados con el blog</a>
     </body>
 </html>
